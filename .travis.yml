@@ -1,3 +1,4 @@
+# https://lkrnac.net/blog/2016/02/speed-gradle-build-travisci/
 language: java
 jdk:
   - oraclejdk8

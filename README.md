@@ -9,6 +9,10 @@ Updated with the latest version of spring and jackson to match spring boot v.1.1
 - springVersion = '4.3.5.RELEASE'
 - springSecurityCryptoVersion = '4.1.4.RELEASE'
 
+### Travis CI
+
+[![Build Status](https://travis-ci.org/emeraldjava/spring-social-yammer.svg?branch=master)](https://travis-ci.org/emeraldjava/spring-social-yammer)
+
 ## Current Spring
 
 - http://docs.spring.io/spring-boot/docs/current/reference/html/appendix-dependency-versions.html
@@ -16,4 +20,6 @@ Updated with the latest version of spring and jackson to match spring boot v.1.1
 
 ## Install the jar to local maven repo
 
+```
 mvn install:install-file -Dfile=./spring-social-yammer/build/libs/spring-social-yammer-1.0.2.BUILD-SNAPSHOT.jar -DgroupId=org.springframework.social -DartifactId=spring-social-yammer -Dversion=1.0.2.BUILD-SNAPSHOT -Dpackaging=jar
+```
