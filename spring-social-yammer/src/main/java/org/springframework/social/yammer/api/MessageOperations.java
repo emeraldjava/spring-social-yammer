@@ -248,6 +248,8 @@ public interface MessageOperations {
 	 */
 	MessageInfo getMessagesInThread(long threadId, long olderThan, long newerThan, int limit);
 
+	MessageInfo getMessagesInGroup(long groupId, long olderThan, long newerThan, String threaded, int limit);
+
 	/**
 	 * Post an update to your network with details (ie attachments etc)
 	 * @param message the text part of your message

@@ -1,28 +1,19 @@
--------------------------------------------------------------------------------
-To get the code and build from source, do the following:
+# Spring Social Yammer
 
-git clone git://github.com/magott/spring-social-yammer.git
-cd spring-social
-./gradlew build
+Updated with the latest version of spring and jackson to match spring boot v.1.1.4
 
--------------------------------------------------------------------------------
-To generate Eclipse metadata (.classpath and .project files), do the following:
+- springSocialVersion = '1.1.4.RELEASE'
+- jacksonVersion = '2.8.5'
+- junitVersion = '4.12'
+- mockitoVersion = '1.10.19'
+- springVersion = '4.3.5.RELEASE'
+- springSecurityCryptoVersion = '4.1.4.RELEASE'
 
-./gradlew eclipse
+## Current Spring
 
-Once complete, you may then import the projects into Eclipse:
-File -> Import -> Existing projects into workspace
+- http://docs.spring.io/spring-boot/docs/current/reference/html/appendix-dependency-versions.html
+- https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-mapper-asl
 
--------------------------------------------------------------------------------
-To generate IDEA metadata (.iml and .ipr files), do the following:
+## Install the jar to local maven repo
 
-./gradlew idea
-
--------------------------------------------------------------------------------
-To build the JavaDoc, do the following from within the root directory:
-
- ./gradlew :docs:api
-
-The result will be available in 'docs/build/api'.
-
--------------------------------------------------------------------------------
+mvn install:install-file -Dfile=./spring-social-yammer/build/libs/spring-social-yammer-1.0.2.BUILD-SNAPSHOT.jar -DgroupId=org.springframework.social -DartifactId=spring-social-yammer -Dversion=1.0.2.BUILD-SNAPSHOT -Dpackaging=jar
