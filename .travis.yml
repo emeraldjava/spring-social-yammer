@@ -1,4 +1,5 @@
 # https://lkrnac.net/blog/2016/02/speed-gradle-build-travisci/
+# https://github.com/lkrnac/blog-2016-01-selenium-on-travis/blob/master/.travis.yml
 language: java
 jdk:
   - oraclejdk8
