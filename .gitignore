@@ -12,3 +12,7 @@ build
 *.iws
 /out
 .idea
+/.sass-cache/
+/_site/
+/Gemfile.lock
+/minimal-mistakes-jekyll.gemspec
