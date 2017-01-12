@@ -9,7 +9,7 @@ theme                    : minimal-mistakes-jekyll
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "spring-social-yammer"
 title_separator          : "-"
 name                     : "spring-social-yammer"
 description              : "An amazing website."
