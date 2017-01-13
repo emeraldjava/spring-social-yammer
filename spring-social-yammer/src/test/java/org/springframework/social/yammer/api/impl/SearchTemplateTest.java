@@ -15,20 +15,16 @@
  */
 package org.springframework.social.yammer.api.impl;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.CoreMatchers.not;
-import static org.hamcrest.CoreMatchers.notNullValue;
+import org.junit.Test;
+import org.springframework.social.yammer.api.SearchResults;
+
+import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.assertThat;
 import static org.springframework.http.HttpMethod.GET;
 import static org.springframework.http.MediaType.APPLICATION_JSON;
-import static org.springframework.test.web.client.match.RequestMatchers.method;
-import static org.springframework.test.web.client.match.RequestMatchers.requestTo;
-import static org.springframework.test.web.client.response.ResponseCreators.withResponse;
-import static org.springframework.test.web.client.response.ResponseCreators.withSuccess;
-
-import org.junit.Test;
-import org.springframework.http.MediaType;
-import org.springframework.social.yammer.api.SearchResults;
+import static org.springframework.test.web.client.match.MockRestRequestMatchers.method;
+import static org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo;
+import static org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess;
 
 /**
  * @author Morten Andersen-Gott
@@ -74,5 +70,4 @@ public class SearchTemplateTest extends AbstractYammerApiTest {
 		assertThat(searchResults.getMessageCount(), equalTo(2));
 		assertThat(searchResults.getTopicCount(), equalTo(0));
 	}
-	
 }

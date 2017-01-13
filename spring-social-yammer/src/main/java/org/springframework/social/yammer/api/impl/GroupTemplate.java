@@ -64,9 +64,9 @@ public class GroupTemplate extends AbstractYammerOperations implements GroupOper
 
 	/**
 	 * Method returns 401 from Yammer, so it isn't visible in GroupOperations yet
-	 * @param groupId
-	 * @param name
-	 * @param isPrivate
+	 * @param groupId groupId
+	 * @param name name
+	 * @param isPrivate isPrivate
 	 */
 	public void updateGroup(long groupId, String name, boolean isPrivate) {
 		LinkedMultiValueMap<String, String> params = new LinkedMultiValueMap<String, String>();
@@ -82,5 +82,4 @@ public class GroupTemplate extends AbstractYammerOperations implements GroupOper
 	public void leaveGroup(long groupId){
 		restTemplate.delete(buildUri("group_memberships.json", "group_id", String.valueOf(groupId)));
 	}
-
 }

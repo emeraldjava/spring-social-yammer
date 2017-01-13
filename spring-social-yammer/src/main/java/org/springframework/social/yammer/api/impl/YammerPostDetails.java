@@ -84,7 +84,7 @@ public class YammerPostDetails {
 	}
 
 	/**
-	 * @param params
+	 * @param params params
 	 */
 	private void addAttachmentsIfPresent(MultiValueMap<String, Object> params) {
 		int count = 0;

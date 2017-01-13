@@ -36,7 +36,7 @@ public class UserTemplate extends AbstractYammerOperations implements UserOperat
 	private RestTemplate restTemplate;
 	
 	/**
-	 * @param restTemplate
+	 * @param restTemplate restTemplate
 	 */
 	public UserTemplate(RestTemplate restTemplate) {
 		this.restTemplate=restTemplate;

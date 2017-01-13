@@ -30,7 +30,7 @@ public class MessageTemplate extends AbstractYammerOperations implements Message
 	private RestTemplate restTemplate;
 	
 	/**
-	 * @param restTemplate
+	 * @param restTemplate restTemplate
 	 */
 	public MessageTemplate(RestTemplate restTemplate) {
 		this.restTemplate=restTemplate;
