@@ -72,6 +72,11 @@ configure(subprojects) { subproject ->
         }
     }
 
+    task testJar(type: Jar) {
+        classifier = 'tests'
+        from sourceSets.test.output
+    }
+
     javadoc {
         options.memberLevel = org.gradle.external.javadoc.JavadocMemberLevel.PROTECTED
         options.author = true
@@ -91,6 +96,7 @@ configure(subprojects) { subproject ->
 
     artifacts {
         archives jar
+        archives testJar
         archives sourcesJar
         archives javadocJar
     }
