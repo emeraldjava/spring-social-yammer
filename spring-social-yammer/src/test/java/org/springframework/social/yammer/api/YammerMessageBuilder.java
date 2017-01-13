@@ -2,6 +2,7 @@ package org.springframework.social.yammer.api;
 
 import org.springframework.social.yammer.api.YammerMessage.Attachment;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -29,6 +30,10 @@ public class YammerMessageBuilder {
     private long sharedMessageId;
 
     private YammerMessageBuilder() {
+    }
+
+    public static YammerMessageBuilder NEW() {
+        return new YammerMessageBuilder();
     }
 
     public YammerMessageBuilder id(long val) {
@@ -116,8 +121,25 @@ public class YammerMessageBuilder {
         return this;
     }
 
+    public YammerMessageBuilder body(String messageString) {
+        body = new YammerMessage.Body(messageString,messageString,messageString,new ArrayList());
+        return this;
+    }
+
     public YammerMessageBuilder likedBy(org.springframework.social.yammer.api.YammerMessage.LikedBy val) {
         likedBy = val;
+        return this;
+    }
+
+    public YammerMessageBuilder likedBy(List<String> users, List<Long> userIds) {
+        List<YammerMessage.LikedBy.Name> namesList = new ArrayList();
+        int i=0;
+        for(String s:users) {
+            YammerMessage.LikedBy.Name name = new YammerMessage.LikedBy.Name(s,s,userIds.get(i));
+            namesList.add(name);
+            i++;
+        }
+        likedBy = new YammerMessage.LikedBy(namesList.size(),namesList);
         return this;
     }
 
