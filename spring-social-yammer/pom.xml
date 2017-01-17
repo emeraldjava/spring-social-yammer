@@ -5,7 +5,7 @@
     <groupId>com.github.emeraldjava</groupId>
     <artifactId>spring-social-yammer</artifactId>
     <packaging>jar</packaging>
-    <version>1.1.3.RELEASE</version>
+    <version>1.1.4.RELEASE</version>
     <name>Spring Social Yammer</name>
 
     <properties>

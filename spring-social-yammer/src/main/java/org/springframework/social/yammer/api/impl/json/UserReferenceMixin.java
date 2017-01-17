@@ -37,9 +37,12 @@ abstract class UserReferenceMixin {
 	@JsonProperty("stats")
 	YammerProfile.Stats userStats;
 	
-	@JsonProperty("fullName")
+	@JsonProperty("full_name")
 	String fullName;
 	
 	@JsonProperty("job_title")
 	String title;
+
+	@JsonProperty("email")
+	String email;
 }

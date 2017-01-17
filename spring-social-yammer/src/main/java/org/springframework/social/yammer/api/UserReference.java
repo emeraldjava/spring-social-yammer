@@ -41,21 +41,22 @@ public class UserReference extends YammerReference{
 		return fullName;
 	}
 
-
 	public String getTitle() {
 		return title;
 	}
-
 
 	public String getName() {
 		return name;
 	}
 
-
-	@Override
 	public String toString() {
-		return "UserReference [getId()=" + getId() + ", getUrl()=" + getUrl() + ", getWebUrl()=" + getWebUrl() + ", mugshotUrl="
-				+ mugshotUrl + ", userStats=" + userStats + ", fullName=" + fullName + ", title=" + title + ", name=" + name + "]";
+		return "UserReference [id=" + getId() +
+				", full_name='" + getFullName() +
+				"', title='" + getTitle() +
+				"', name='" + getName() + "'"+
+				", getUrl()=" + getUrl() +
+				", getWebUrl()=" + getWebUrl() +
+				", mugshotUrl=" + mugshotUrl +
+				", userStats=" + userStats;
 	}
-	
 }
