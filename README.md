@@ -9,9 +9,13 @@ Updated with the latest version of spring and jackson to match spring boot v.1.1
 - springVersion = '4.3.5.RELEASE'
 - springSecurityCryptoVersion = '4.1.4.RELEASE'
 
-### Travis CI
+## Travis CI
 
 [![Build Status](https://travis-ci.org/emeraldjava/spring-social-yammer.svg?branch=master)](https://travis-ci.org/emeraldjava/spring-social-yammer)
+
+## Jitpack
+
+[![Release](https://jitpack.io/v/emeraldjava/spring-social-yammer.svg)](https://jitpack.io/#emeraldjava/spring-social-yammer)
 
 ## Current Spring
 
