@@ -15,13 +15,14 @@
  */
 package org.springframework.social.yammer.api.impl;
 
-import java.util.List;
-
 import org.springframework.social.yammer.api.Group;
+import org.springframework.social.yammer.api.GroupMembers;
 import org.springframework.social.yammer.api.GroupOperations;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
+
+import java.util.List;
 
 /**
  * @author Morten Andersen-Gott
@@ -50,6 +51,10 @@ public class GroupTemplate extends AbstractYammerOperations implements GroupOper
 
 	public Group getGroup(long groupId) {
 		return restTemplate.getForObject(buildUri("groups/"+String.valueOf(groupId)+".json"), Group.class);
+	}
+
+	public GroupMembers getGroupMembers(long groupId) {
+		return restTemplate.getForObject(buildUri("groups/"+String.valueOf(groupId)+"/members.json"), GroupMembers.class);
 	}
 
 	/* (non-Javadoc)

@@ -45,4 +45,7 @@ abstract class UserReferenceMixin {
 
 	@JsonProperty("email")
 	String email;
+
+	@JsonProperty("is_group_admin")
+	boolean isGroupAdmin;
 }

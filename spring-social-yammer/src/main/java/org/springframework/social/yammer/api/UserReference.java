@@ -22,7 +22,7 @@ public class UserReference extends YammerReference{
 	private String fullName;
 	private String title;
 	private String name;
-	
+	private boolean isGroupAdmin;
 	
 	public UserReference(long id, String url, String webUrl, String name) {
 		super(id, url, webUrl);
@@ -49,13 +49,17 @@ public class UserReference extends YammerReference{
 		return name;
 	}
 
+	public boolean isGroupAdmin() {
+		return isGroupAdmin;
+	}
+
 	public String toString() {
 		return "UserReference [id=" + getId() +
 				", full_name='" + getFullName() +
 				"', title='" + getTitle() +
 				"', name='" + getName() + "'"+
-				", getUrl()=" + getUrl() +
-				", getWebUrl()=" + getWebUrl() +
+				", getUrl=" + getUrl() +
+				", getWebUrl=" + getWebUrl() +
 				", mugshotUrl=" + mugshotUrl +
 				", userStats=" + userStats;
 	}

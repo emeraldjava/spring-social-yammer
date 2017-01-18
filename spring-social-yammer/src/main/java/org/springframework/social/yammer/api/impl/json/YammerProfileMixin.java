@@ -15,17 +15,12 @@
  */
 package org.springframework.social.yammer.api.impl.json;
 
-import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.springframework.social.yammer.api.YammerProfile.Contact;
-import org.springframework.social.yammer.api.YammerProfile.EMail;
-import org.springframework.social.yammer.api.YammerProfile.InstantMessaging;
-import org.springframework.social.yammer.api.YammerProfile.Phone;
-import org.springframework.social.yammer.api.YammerProfile.School;
-import org.springframework.social.yammer.api.YammerProfile.Stats;
+import org.springframework.social.yammer.api.YammerProfile.*;
+
+import java.util.List;
 
 /**
  * @author Morten Andersen-Gott
@@ -49,15 +44,12 @@ abstract class YammerProfileMixin {
 			@JsonProperty("contact") Contact contact,
 			@JsonProperty("schools") List<School> schools,
 			@JsonProperty("external_urls") List<String> externalUrls,
-			
 			@JsonProperty("last_name") String lastName,
 			@JsonProperty("first_name") String firstName,
 			@JsonProperty("network_id") long networkId,
 			@JsonProperty("timezone") String timezone
 	){}
-	
-	
-	
+
 	@JsonIgnoreProperties(ignoreUnknown=true)
 	abstract static class ContactMixin {
 		@JsonCreator

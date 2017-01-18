@@ -15,9 +15,9 @@
  */
 package org.springframework.social.yammer.api;
 
-import java.util.List;
-
 import org.springframework.social.ResourceNotFoundException;
+
+import java.util.List;
 
 /**
  * Sub-API for all Group related methods
@@ -99,4 +99,10 @@ public interface GroupOperations {
 	 */
 	void joinGroup(long groupId);
 
+	/**
+	 * Returns the members of a specific group
+	 * @param groupId
+	 * @return
+	 */
+	GroupMembers getGroupMembers(long groupId);
 }

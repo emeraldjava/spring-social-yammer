@@ -15,21 +15,11 @@
  */
 package org.springframework.social.yammer.api.impl.json;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.*;
 import com.fasterxml.jackson.annotation.JsonSubTypes.Type;
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.annotation.JsonTypeInfo.As;
 import com.fasterxml.jackson.annotation.JsonTypeInfo.Id;
-import org.springframework.social.yammer.api.GroupReference;
-import org.springframework.social.yammer.api.MessageReference;
-import org.springframework.social.yammer.api.TagReference;
-import org.springframework.social.yammer.api.ThreadReference;
-import org.springframework.social.yammer.api.TopicReference;
-import org.springframework.social.yammer.api.UserReference;
-import org.springframework.social.yammer.api.YammerReference;
+import org.springframework.social.yammer.api.*;
 
 @JsonTypeInfo(use=Id.NAME, include=As.PROPERTY, property="type", defaultImpl=YammerReference.class)
 @JsonSubTypes({
@@ -49,6 +39,4 @@ abstract class YammerReferenceMixin {
 			@JsonProperty("url")String url, 
 			@JsonProperty("web_url")String webUrl
 			) {	}
-	
-	
 }

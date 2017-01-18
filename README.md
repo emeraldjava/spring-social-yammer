@@ -23,3 +23,6 @@ Updated with the latest version of spring and jackson to match spring boot v.1.1
 ```
 mvn install:install-file -Dfile=./spring-social-yammer/build/libs/spring-social-yammer-1.0.2.BUILD-SNAPSHOT.jar -DgroupId=org.springframework.social -DartifactId=spring-social-yammer -Dversion=1.0.2.BUILD-SNAPSHOT -Dpackaging=jar
 ```
+
+http://stackoverflow.com/questions/26737297/api-rest-yammer-cant-retrieve-admins-from-a-group
+

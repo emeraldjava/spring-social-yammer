@@ -35,7 +35,7 @@ public class Group {
 	private final String name;
 	private final long id;
 	private final Date createdAt;
-	
+
 	public Group(String privacy, String webUrl, GroupStats stats, String mugshotUrl, String url, String description,
 			String fullName, String name, long id, Date createdAt) {
 		this.privacy = privacy;
@@ -50,7 +50,6 @@ public class Group {
 		this.createdAt = createdAt;
 	}
 
-
 	public String getPrivacy() {
 		return privacy;
 	}
@@ -60,12 +59,19 @@ public class Group {
 	}
 
 	public int getMemberCount(){
-		return stats.members;
+		if(stats!=null)
+			return stats.members;
+		else
+			return -1;
 	}
 
 	public int getUpdateCount(){
-		return stats.updates;
+		if(stats!=null)
+			return stats.updates;
+		else
+			return -1;
 	}
+
 	public String getMugshotUrl() {
 		return mugshotUrl;
 	}
@@ -98,8 +104,6 @@ public class Group {
         return stats.lastMessageAt;
     }
 
-	
-	
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
@@ -110,8 +114,6 @@ public class Group {
 				.append(name).append(", id=").append(id).append(", createdAt=").append(createdAt).append("]");
 		return builder.toString();
 	}
-
-
 
 	public static class GroupStats{
 		private final int updates;
