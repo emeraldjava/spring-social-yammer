@@ -1,5 +1,6 @@
 package org.springframework.social.yammer.api.impl;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.http.MediaType;
 import org.springframework.social.yammer.api.MessageInfo;
@@ -191,7 +192,7 @@ public class MessageTemplateTest extends AbstractYammerApiTest {
 		assertFirstMessage(messageInfo.getMessages().get(0));
 		assertCollectionNotEmpty(messages);
 		assertCollectionNotEmpty(metadata.getBookmarkedMessageIds());
-
+		Assert.assertTrue(metadata.isOlderAvailable());
 	}
 	
 	private void assertFirstMessage(YammerMessage yammerMessage) {

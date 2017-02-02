@@ -31,11 +31,12 @@ public class YammerMessageMeta {
 	private List<Long> likedMessageIds;
 	private List<Long> favoriteMessageIds;
 	private List<Long> followedUserIds;
+	private boolean olderAvailable;
 	private List<Long> bookmarkedMessageIds;
-	
+
 	public YammerMessageMeta(long currentUserId, String feedName, String feedDescription,
 			int unseenMessageCountFollowing, int unseenMessageCountReceived, List<Long> likedMessageIds,
-			List<Long> favoriteMessageIds, List<Long> followedUserIds, List<Long> bookmarkedMessageIds) {
+			List<Long> favoriteMessageIds, List<Long> followedUserIds, boolean olderAvailable, List<Long> bookmarkedMessageIds) {
 		this.currentUserId = currentUserId;
 		this.feedName = feedName;
 		this.feedDescription = feedDescription;
@@ -45,6 +46,7 @@ public class YammerMessageMeta {
 		this.favoriteMessageIds = favoriteMessageIds;
 		this.followedUserIds = followedUserIds;
 		this.bookmarkedMessageIds = bookmarkedMessageIds;
+		this.olderAvailable = olderAvailable;
 	}
 
 	public long getCurrentUserId() {
@@ -77,6 +79,10 @@ public class YammerMessageMeta {
 
 	public List<Long> getFollowedUserIds() {
 		return followedUserIds;
+	}
+
+	public boolean isOlderAvailable() {
+		return olderAvailable;
 	}
 
 	public List<Long> getBookmarkedMessageIds() {

@@ -37,7 +37,7 @@ abstract class YammerMessageMetaMixin {
 			@JsonProperty("unseen_message_count_received")int unseenMessageCountReceived, 
 			@JsonProperty("liked_message_ids")List<Long> likedMessageIds,
 			@JsonProperty("favorite_message_ids")List<Long> favoriteMessageIds, 
-			@JsonProperty("followed_user_id")List<Long> followedUserIds, 
+			@JsonProperty("followed_user_id")List<Long> followedUserIds,
+			@JsonProperty("older_available")boolean olderAvailable,
 			@JsonProperty("bookmarked_message_ids")List<Long> bookmarkedMessageIds) {}
-	
 }
