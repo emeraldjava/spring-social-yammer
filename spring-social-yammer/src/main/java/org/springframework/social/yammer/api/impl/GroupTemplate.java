@@ -18,10 +18,13 @@ package org.springframework.social.yammer.api.impl;
 import org.springframework.social.yammer.api.Group;
 import org.springframework.social.yammer.api.GroupMembers;
 import org.springframework.social.yammer.api.GroupOperations;
+import org.springframework.social.yammer.api.YammerReference;
+import org.springframework.social.yammer.api.util.PaginationUtil;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -55,6 +58,28 @@ public class GroupTemplate extends AbstractYammerOperations implements GroupOper
 
 	public GroupMembers getGroupMembers(long groupId) {
 		return restTemplate.getForObject(buildUri("groups/"+String.valueOf(groupId)+"/members.json"), GroupMembers.class);
+	}
+
+	public GroupMembers getGroupMembers(long groupId,int page) {
+		MultiValueMap<String, String> params = new LinkedMultiValueMap<String, String>();
+		params.set("page", String.valueOf(page));
+		return restTemplate.getForObject(buildUri("groups/"+String.valueOf(groupId)+"/members.json",params), GroupMembers.class);
+	}
+
+	/**
+	 * Return all group members using the paged group query.
+	 * @param group
+	 * @return
+	 */
+	public GroupMembers getAllGroupMembers(Group group) {
+		PaginationUtil pageCalculator = new PaginationUtil();
+		int requiredPageCalls = pageCalculator.calculatePageCount(group.getMemberCount(),GROUP_MEMBER_QUERY_LIMIT);
+		GroupMembers allGroupMembers = new GroupMembers(group,new ArrayList<YammerReference>());
+		for(int page=1;page<=requiredPageCalls;page++) {
+			GroupMembers pagedResult = getGroupMembers(group.getId(),page);
+			allGroupMembers.getUsers().addAll(pagedResult.getUsers());
+		}
+		return allGroupMembers;
 	}
 
 	/* (non-Javadoc)

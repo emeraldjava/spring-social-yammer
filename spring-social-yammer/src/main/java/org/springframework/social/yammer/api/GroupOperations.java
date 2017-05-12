@@ -51,6 +51,8 @@ public interface GroupOperations {
 	 */
 	public static final String SORT_BY_MEMBERS = "members";
 
+	public static final int GROUP_MEMBER_QUERY_LIMIT = 50;
+
 	/**
 	 * Retrieves a list of groups as specified by the parameters. Groups are
 	 * returned on pages with each page having a maximum of 20 groups.
@@ -100,9 +102,23 @@ public interface GroupOperations {
 	void joinGroup(long groupId);
 
 	/**
-	 * Returns the members of a specific group
+	 * Returns the first 50 members of a specific group
 	 * @param groupId
 	 * @return
 	 */
 	GroupMembers getGroupMembers(long groupId);
+
+	/**
+	 * Return the group members on a specific page
+	 * @param groupId
+	 * @param page
+	 * @return
+	 */
+	GroupMembers getGroupMembers(long groupId,int page);
+
+	/**
+	 * Return all group members for a specific group.
+	 * @return
+	 */
+	GroupMembers getAllGroupMembers(Group group);
 }
