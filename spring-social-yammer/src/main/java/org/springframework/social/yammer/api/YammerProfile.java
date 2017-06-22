@@ -344,7 +344,30 @@ public class YammerProfile {
 		public String toString() {
 			return "Stats [followers=" + followers + ", following=" + following + ", updates=" + updates + "]";
 		}
-
 	}
-	
+
+	@Override
+	public String toString() {
+		final StringBuilder sb = new StringBuilder("YammerProfile{");
+		sb.append("id=").append(id);
+		sb.append(", name='").append(name).append('\'');
+		sb.append(", fullName='").append(fullName).append('\'');
+		sb.append(", admin=").append(admin);
+		//sb.append(", mugshotUrl='").append(mugshotUrl).append('\'');
+		//sb.append(", stats=").append(stats);
+		//sb.append(", type='").append(type).append('\'');
+		//sb.append(", url='").append(url).append('\'');
+		//sb.append(", expertise='").append(expertise).append('\'');
+		//sb.append(", summary='").append(summary).append('\'');
+		//sb.append(", schools=").append(schools);
+		//sb.append(", externalUrls=").append(externalUrls);
+		sb.append(", jobTitle='").append(jobTitle).append('\'');
+		//sb.append(", contact=").append(contact);
+		//sb.append(", lastName='").append(lastName).append('\'');
+		//sb.append(", firstName='").append(firstName).append('\'');
+		//sb.append(", networkId=").append(networkId);
+		//sb.append(", timezone='").append(timezone).append('\'');
+		sb.append('}');
+		return sb.toString();
+	}
 }

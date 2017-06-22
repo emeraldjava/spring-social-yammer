@@ -7,10 +7,10 @@ import java.util.List;
  */
 public class UserList {
 
-    private List<YammerReference> users;
+    private List<YammerProfile> users;
     private boolean moreAvailable;
 
-    public UserList(List<YammerReference> users,boolean moreAvailable) {
+    public UserList(List<YammerProfile> users,boolean moreAvailable) {
         this.users=users;
         this.moreAvailable=moreAvailable;
     }
@@ -19,7 +19,7 @@ public class UserList {
         return moreAvailable;
     }
 
-    public List<YammerReference> getUsers() {
+    public List<YammerProfile> getUsers() {
         return users;
     }
 

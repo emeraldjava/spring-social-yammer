@@ -80,7 +80,7 @@ public interface UserOperations {
 	 * @param messageId
 	 * @return
 	 */
-	List<YammerReference> getUsersWhoLikedMessage(long messageId);
+	List<YammerProfile> getUsersWhoLikedMessage(long messageId);
 
 	/**
 	 * Update user profile
