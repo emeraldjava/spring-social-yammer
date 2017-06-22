@@ -15,9 +15,9 @@
  */
 package org.springframework.social.yammer.api;
 
-import java.util.List;
-
 import org.springframework.social.ResourceNotFoundException;
+
+import java.util.List;
 
 /**
  * Sub-API for User related operations
@@ -74,6 +74,13 @@ public interface UserOperations {
 	 * @return List of {@link YammerProfile}s matching criteria
 	 */
 	List<YammerProfile> getUsers(int page);
+
+	/**
+	 * Return the list of users who liked a message.
+	 * @param messageId
+	 * @return
+	 */
+	List<YammerReference> getUsersWhoLikedMessage(long messageId);
 
 	/**
 	 * Update user profile

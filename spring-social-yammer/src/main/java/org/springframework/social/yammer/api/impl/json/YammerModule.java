@@ -62,6 +62,7 @@ public class YammerModule extends SimpleModule {
 		context.setMixInAnnotations(InstantMessaging.class, InstantMessagingMixin.class);
 		context.setMixInAnnotations(School.class, SchoolMixin.class);
 		context.setMixInAnnotations(MessageInfo.class, MessageInfoMixin.class);
+		context.setMixInAnnotations(UserList.class, UserListMixin.class);
 		context.setMixInAnnotations(GroupMembers.class, GroupMembersMixin.class);
 		context.setMixInAnnotations(YammerMessage.class, YammerMessageMixin.class);
 		context.setMixInAnnotations(Body.class, BodyMixin.class);
@@ -85,6 +86,5 @@ public class YammerModule extends SimpleModule {
 		context.setMixInAnnotations(MessageReference.class, MessageReferenceMixin.class);
 		context.setMixInAnnotations(TopicReference.class, TopicReferenceMixin.class);
 		context.setMixInAnnotations(TagReference.class, TagReferenceMixin.class);
-
 	}
 }

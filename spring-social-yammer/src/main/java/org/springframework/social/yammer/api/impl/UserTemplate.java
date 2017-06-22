@@ -15,16 +15,14 @@
  */
 package org.springframework.social.yammer.api.impl;
 
-import java.net.URI;
-import java.util.List;
-
-import org.springframework.social.yammer.api.UserInfo;
-import org.springframework.social.yammer.api.UserOperations;
-import org.springframework.social.yammer.api.YammerProfile;
+import org.springframework.social.yammer.api.*;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
+
+import java.net.URI;
+import java.util.List;
 
 /**
  * 
@@ -87,5 +85,14 @@ public class UserTemplate extends AbstractYammerOperations implements UserOperat
 		}
 		return profileList.get(0);
 	}
-	
+
+	/**
+	 * https://developer.yammer.com/docs/usersliked_messagemessage_idjson
+	 * @param messageId
+	 * @return
+	 */
+	public List<YammerReference> getUsersWhoLikedMessage(long messageId) {
+		UserList userList = restTemplate.getForObject(buildUri("users/liked_message/" + messageId + ".json"), UserList.class);
+		return userList.getUsers();
+	}
 }
