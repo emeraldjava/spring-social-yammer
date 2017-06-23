@@ -1,0 +1,54 @@
+{
+  "group": {
+    "type": "group",
+    "id": 10014533,
+    "email": "sales-ninja-yammer-group+bearingpoint.com@yammer.com",
+    "full_name": "sales-ninja-yammer-group",
+    "network_id": 2189,
+    "name": "sales-ninja-yammer-group",
+    "description": "A description of the sales ninja yammer group.",
+    "privacy": "private",
+    "url": "https://www.yammer.com/api/v1/groups/10014533",
+    "web_url": "https://www.yammer.com/bearingpoint.com/#/threads/inGroup?type=in_group&feedId=10014533",
+    "mugshot_url": "https://mug0.assets-yammer.com/mugshot/images/48x48/W09Jn7n6pg-XCkg2xtP44sKjZ-859fp6",
+    "mugshot_url_template": "https://mug0.assets-yammer.com/mugshot/images/{width}x{height}/W09Jn7n6pg-XCkg2xtP44sKjZ-859fp6",
+    "mugshot_id": "W09Jn7n6pg-XCkg2xtP44sKjZ-859fp6",
+    "show_in_directory": "false",
+    "created_at": "2016/12/05 21:09:46 +0000",
+    "members": 6,
+    "color": "#4078bf",
+    "external": false,
+    "moderated": true
+  },
+  "users": [
+    {
+      "type": "user",
+      "id": 1563490930,
+      "name": "",
+      "state": "active",
+      "full_name": " ",
+      "job_title": "Senior  Consultant",
+      "network_id": 2189,
+      "mugshot_url": "https://mug0.assets-yammer.com/mugshot/images/48x48/no_photo.png",
+      "mugshot_url_template": "https://mug0.assets-yammer.com/mugshot/images/{width}x{height}/no_photo.png",
+      "url": "https://www.yammer.com/api/v1/users/1563490930",
+      "web_url": "https://www.yammer.com/.com/users/1563490930",
+      "activated_at": "2016/03/21 11:49:24 +0000",
+      "auto_activated": false,
+      "stats": {
+        "following": 1,
+        "followers": 1,
+        "updates": 0
+      },
+      "email": "diarmuid.@.com",
+      "is_group_admin": true,
+      "group_member": {
+        "state": "approved"
+      }
+    }
+  ],
+  "total_members": 1,
+  "more_available": false,
+  "current_user_is_member": true,
+  "join_status": "JOINED"
+}

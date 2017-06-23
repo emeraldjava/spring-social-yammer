@@ -1,9 +1,7 @@
 package org.springframework.social.yammer.api.impl;
 
 import org.junit.Test;
-import org.springframework.social.yammer.api.UserInfo;
-import org.springframework.social.yammer.api.UserOperations;
-import org.springframework.social.yammer.api.YammerProfile;
+import org.springframework.social.yammer.api.*;
 import org.springframework.util.StringUtils;
 
 import java.io.UnsupportedEncodingException;
@@ -62,6 +60,7 @@ public class UserTemplateTest extends AbstractYammerApiTest{
 		List<YammerProfile> users = yammerTemplate.userOperations().getUsers(1, UserOperations.SORT_BY_MESSAGES, false, 'A');
 		assertYammerProfile(users.get(0));
 	}
+
 	@Test
 	public void testGetUsers_page() throws UnsupportedEncodingException{
 		mockServer.expect(requestTo("https://www.yammer.com/api/v1/users.json?page=1&reverse=false"))
@@ -69,6 +68,15 @@ public class UserTemplateTest extends AbstractYammerApiTest{
 		.andRespond(withSuccess(jsonResource("testdata/yammer-users"), APPLICATION_JSON));
 		List<YammerProfile> users = yammerTemplate.userOperations().getUsers(1);
 		assertYammerProfile(users.get(0));
+	}
+
+	@Test
+	public void testGetUsersWhoLikedMessage() throws UnsupportedEncodingException{
+		mockServer.expect(requestTo("https://www.yammer.com/api/v1/users/liked_message/1.json"))
+				.andExpect(method(GET))
+				.andRespond(withSuccess(jsonResource("testdata/yammer-liked-messages"), APPLICATION_JSON));
+		List<YammerProfile> users = yammerTemplate.userOperations().getUsersWhoLikedMessage(1);
+		//assertYammerProfile(users.get(0));
 	}
 	
 	@Test

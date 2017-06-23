@@ -1,0 +1,220 @@
+{
+  "users": [
+    {
+      "type": "user",
+      "id": 1495348716,
+      "name": "",
+      "state": "active",
+      "full_name": " ",
+      "job_title": "",
+      "network_id": 2189,
+      "mugshot_url": "https://mug0.assets-yammer.com/mugshot/images/48x48/PtkCrf0k0-Q4Xpb1rVLBtPnXL4Sj7v2B",
+      "mugshot_url_template": "https://mug0.assets-yammer.com/mugshot/images/{width}x{height}/PtkCrf0k0-Q4Xpb1rVLBtPnXL4Sj7v2B",
+      "url": "https://www.yammer.com/api/v1/users/1495348716",
+      "web_url": "https://www.yammer.com/bx/users/1495348716",
+      "activated_at": "2013/03/20 12:13:15 +0000",
+      "auto_activated": false,
+      "stats": {
+        "following": 1,
+        "followers": 7,
+        "updates": 1
+      },
+      "email": ".@.com"
+    },
+    {
+      "type": "user",
+      "id": 8051973,
+      "name": "",
+      "state": "active",
+      "full_name": "David O'",
+      "job_title": "Senior  ",
+      "network_id": 2189,
+      "mugshot_url": "https://mug0.assets-yammer.com/mugshot/images/48x48/DfbP8B2njJV0PQS8SVhLxq2wkQNfCcnW",
+      "mugshot_url_template": "https://mug0.assets-yammer.com/mugshot/images/{width}x{height}/DfbP8B2njJV0PQS8SVhLxq2wkQNfCcnW",
+      "url": "https://www.yammer.com/api/v1/users/8051973",
+      "web_url": "https://www.yammer.com/bx/users/8051973",
+      "activated_at": "2011/11/03 11:45:48 +0000",
+      "auto_activated": false,
+      "stats": {
+        "following": 2,
+        "followers": 12,
+        "updates": 2
+      },
+      "email": ".@.com"
+    },
+    {
+      "type": "user",
+      "id": 1557181477,
+      "name": "",
+      "state": "active",
+      "full_name": "David ",
+      "job_title": "Manager",
+      "network_id": 2189,
+      "mugshot_url": "https://mug0.assets-yammer.com/mugshot/images/48x48/Q2Sr9CnMww7rDqXsVmXxjGWHwd6-GZ50",
+      "mugshot_url_template": "https://mug0.assets-yammer.com/mugshot/images/{width}x{height}/Q2Sr9CnMww7rDqXsVmXxjGWHwd6-GZ50",
+      "url": "https://www.yammer.com/api/v1/users/1557181477",
+      "web_url": "https://www.yammer.com/bx/users/1557181477",
+      "activated_at": "2017/01/24 11:35:10 +0000",
+      "auto_activated": true,
+      "stats": {
+        "following": 1,
+        "followers": 5,
+        "updates": 0
+      },
+      "email": "t.com"
+    },
+    {
+      "type": "user",
+      "id": 1497015187,
+      "name": "ericconway",
+      "state": "active",
+      "full_name": " ",
+      "job_title": "",
+      "network_id": 2189,
+      "mugshot_url": "https://mug0.assets-yammer.com/mugshot/images/48x48/FDmCpcsW3KpzL32Gfbjzc8FffqXNwFmr",
+      "mugshot_url_template": "https://mug0.assets-yammer.com/mugshot/images/{width}x{height}/FDmCpcsW3KpzL32Gfbjzc8FffqXNwFmr",
+      "url": "https://www.yammer.com/api/v1/users/1497015187",
+      "web_url": "https://www.yammer.com/bx/users/1497015187",
+      "activated_at": "2017/01/24 18:10:01 +0000",
+      "auto_activated": true,
+      "stats": {
+        "following": 3,
+        "followers": 8,
+        "updates": 0
+      },
+      "email": "om"
+    },
+    {
+      "type": "user",
+      "id": 1563489699,
+      "name": "",
+      "state": "active",
+      "full_name": "Garrett ",
+      "job_title": "Senior  Consultant",
+      "network_id": 2189,
+      "mugshot_url": "https://mug0.assets-yammer.com/mugshot/images/48x48/PmJX3zG4q8Fc6sz3ql8GrnTHkRlsQnTD",
+      "mugshot_url_template": "https://mug0.assets-yammer.com/mugshot/images/{width}x{height}/PmJX3zG4q8Fc6sz3ql8GrnTHkRlsQnTD",
+      "url": "https://www.yammer.com/api/v1/users/1563489699",
+      "web_url": "https://www.yammer.com/bx/users/1563489699",
+      "activated_at": "2016/05/12 14:36:41 +0000",
+      "auto_activated": false,
+      "stats": {
+        "following": 1,
+        "followers": 5,
+        "updates": 0
+      },
+      "email": "gm"
+    },
+    {
+      "type": "user",
+      "id": 1513774235,
+      "name": "",
+      "state": "",
+      "full_name": "Gary ",
+      "job_title": "",
+      "network_id": 2189,
+      "mugshot_url": "https://mug0.assets-yammer.com/mugshot/images/48x48/JTbJ2wg9Kqv6JvZSm2p21KPbKRtKln04",
+      "mugshot_url_template": "https://mug0.assets-yammer.com/mugshot/images/{width}x{height}/JTbJ2wg9Kqv6JvZSm2p21KPbKRtKln04",
+      "url": "https://www.yammer.com/api/v1/users/1513774235",
+      "web_url": "https://www.yammer.com/bx/users/1513774235",
+      "activated_at": "2016/10/21 10:29:04 +0000",
+      "auto_activated": true,
+      "stats": {
+        "following": 1,
+        "followers": 5,
+        "updates": 0
+      },
+      "email": "xx"
+    },
+    {
+      "type": "user",
+      "id": 1493452453,
+      "name": "",
+      "state": "active",
+      "full_name": "Mark ",
+      "job_title": "",
+      "network_id": 2189,
+      "mugshot_url": "https://mug0.assets-yammer.com/mugshot/images/48x48/TDBwdqZlj9BXthSQ88T4wfcdWlj1zq45",
+      "mugshot_url_template": "https://mug0.assets-yammer.com/mugshot/images/{width}x{height}/TDBwdqZlj9BXthSQ88T4wfcdWlj1zq45",
+      "url": "https://www.yammer.com/api/v1/users/1493452453",
+      "web_url": "https://www.yammer.com/bx/users/1493452453",
+      "activated_at": "2017/02/01 11:41:45 +0000",
+      "auto_activated": false,
+      "stats": {
+        "following": 0,
+        "followers": 4,
+        "updates": 0
+      },
+      "email": "xx"
+    },
+    {
+      "type": "user",
+      "id": 1563490037,
+      "name": "",
+      "state": "active",
+      "full_name": "Noel ",
+      "job_title": "",
+      "network_id": 2189,
+      "mugshot_url": "https://mug0.assets-yammer.com/mugshot/images/48x48/no_photo.png",
+      "mugshot_url_template": "https://mug0.assets-yammer.com/mugshot/images/{width}x{height}/no_photo.png",
+      "url": "https://www.yammer.com/api/v1/users/1563490037",
+      "web_url": "https://www.yammer.com/bx/users/1563490037",
+      "activated_at": "2017/02/27 15:14:14 +0000",
+      "auto_activated": true,
+      "stats": {
+        "following": 1,
+        "followers": 6,
+        "updates": 0
+      },
+      "email": "xx"
+    },
+    {
+      "type": "user",
+      "id": 1563490063,
+      "name": "",
+      "state": "active",
+      "full_name": "Paul O'",
+      "job_title": "Senior ",
+      "network_id": 2189,
+      "mugshot_url": "https://mug0.assets-yammer.com/mugshot/images/48x48/tmZn9JX4T9pKBnw1l67Gkw9R4dJTWXFq",
+      "mugshot_url_template": "https://mug0.assets-yammer.com/mugshot/images/{width}x{height}/tmZn9JX4T9pKBnw1l67Gkw9R4dJTWXFq",
+      "url": "https://www.yammer.com/api/v1/users/1563490063",
+      "web_url": "https://www.yammer.com/bx/users/1563490063",
+      "activated_at": "2016/03/16 12:36:17 +0000",
+      "auto_activated": false,
+      "stats": {
+        "following": 6,
+        "followers": 8,
+        "updates": 0
+      },
+      "email": "xx"
+    },
+    {
+      "type": "user",
+      "id": 1563489818,
+      "name": "x",
+      "state": "active",
+      "full_name": "x ",
+      "job_title": "Project Manager",
+      "network_id": 2189,
+      "mugshot_url": "https://mug0.assets-yammer.com/mugshot/images/48x48/QRKFVnKXlGxs1blfPM2R6pFWt2phPH2l",
+      "mugshot_url_template": "https://mug0.assets-yammer.com/mugshot/images/{width}x{height}/QRKFVnKXlGxs1blfPM2R6pFWt2phPH2l",
+      "url": "https://www.yammer.com/api/v1/users/1563489818",
+      "web_url": "https://www.yammer.com/bx/users/1563489818",
+      "activated_at": "2016/08/17 07:50:16 +0000",
+      "auto_activated": false,
+      "stats": {
+        "following": 51,
+        "followers": 5,
+        "updates": 0
+      },
+      "email": "xx"
+    }
+  ],
+  "more_available": false,
+  "meta": {
+    "followed_user_ids": [
+      1557181477
+    ]
+  }
+}

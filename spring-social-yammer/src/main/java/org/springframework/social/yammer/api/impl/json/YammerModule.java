@@ -29,6 +29,7 @@ import org.springframework.social.yammer.api.YammerMessage.LikedBy;
 import org.springframework.social.yammer.api.YammerMessage.LikedBy.Name;
 import org.springframework.social.yammer.api.YammerProfile.*;
 import org.springframework.social.yammer.api.YammerThread.ThreadStats;
+import org.springframework.social.yammer.api.impl.UserList;
 import org.springframework.social.yammer.api.impl.json.GroupMixin.GroupStatsMixin;
 import org.springframework.social.yammer.api.impl.json.SearchResultsMixin.SearchStatsMixin;
 import org.springframework.social.yammer.api.impl.json.TopicMixin.TopicExpertMixin;

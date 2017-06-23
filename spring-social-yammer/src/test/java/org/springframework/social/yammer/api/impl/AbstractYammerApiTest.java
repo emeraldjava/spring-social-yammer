@@ -43,9 +43,7 @@ public abstract class AbstractYammerApiTest {
 	}
 	
 	protected Resource jsonResource(String filename) {
-		return new ClassPathResource(filename + ".json", getClass());
+		return new ClassPathResource(filename + ".json");
 	}
-
-
 }
 

@@ -1,4 +1,6 @@
-package org.springframework.social.yammer.api;
+package org.springframework.social.yammer.api.impl;
+
+import org.springframework.social.yammer.api.YammerProfile;
 
 import java.util.List;
 
